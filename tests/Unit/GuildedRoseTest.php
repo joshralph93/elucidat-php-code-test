@@ -101,17 +101,17 @@ class GuildedRoseTest extends TestCase
              */
             'sulfuras item before sell date' => [
                 'item' => new Item('Sulfuras, Hand of Ragnaros', 10, 5),
-                'expectedQuality' => 10,
+                'expectedQuality' => 80,
                 'expectedSellIn' => 5,
             ],
             'sulfuras item on sell date' => [
                 'item' => new Item('Sulfuras, Hand of Ragnaros', 10, 5),
-                'expectedQuality' => 10,
+                'expectedQuality' => 80,
                 'expectedSellIn' => 5,
             ],
             'sulfuras item after sell date' => [
                 'item' => new Item('Sulfuras, Hand of Ragnaros', 10, -1),
-                'expectedQuality' => 10,
+                'expectedQuality' => 80,
                 'expectedSellIn' => -1,
             ],
 
