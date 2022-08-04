@@ -1,0 +1,2 @@
+Time spent: 2h
+PHP Version: 8.1
