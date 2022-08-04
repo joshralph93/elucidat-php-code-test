@@ -197,6 +197,16 @@ class GuildedRoseTest extends TestCase
                  'expectedQuality' => 0,
                  'expectedSellIn' => -11,
              ],
+            'conjured item on sell date with one quality' => [
+                'item' => new Item('Conjured Mana Cake', 1, 0),
+                'expectedQuality' => 0,
+                'expectedSellIn' => -1,
+            ],
+            'conjured item after sell date with one quality' => [
+                'item' => new Item('Conjured Mana Cake', 1, -10),
+                'expectedQuality' => 0,
+                'expectedSellIn' => -11,
+            ],
         ];
     }
 }
