@@ -24,7 +24,9 @@ class GildedRose
         foreach ($this->items as $item) {
             if ($item->name != 'Aged Brie' and $item->name != 'Backstage passes to a TAFKAL80ETC concert') {
                 if ($item->quality > 0) {
-                    if ($item->name != 'Sulfuras, Hand of Ragnaros') {
+                    if ($item->name === 'Conjured Mana Cake') {
+                        $item->quality = $item->quality - 2;
+                    } else if ($item->name != 'Sulfuras, Hand of Ragnaros') {
                         $item->quality = $item->quality - 1;
                     }
                 }
@@ -52,7 +54,9 @@ class GildedRose
                 if ($item->name != 'Aged Brie') {
                     if ($item->name != 'Backstage passes to a TAFKAL80ETC concert') {
                         if ($item->quality > 0) {
-                            if ($item->name != 'Sulfuras, Hand of Ragnaros') {
+                            if ($item->name === 'Conjured Mana Cake') {
+                                $item->quality = $item->quality - 2;
+                            } else if ($item->name != 'Sulfuras, Hand of Ragnaros') {
                                 $item->quality = $item->quality - 1;
                             }
                         }
